@@ -4,13 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Binghua Zhang — Software Engineer</title>
-<meta name="description" content="Binghua Zhang is a software engineer in Perth, Western Australia, with eight-plus years of back-end experience and a Master of Computing (Computer Science) from Curtin University.">
+<meta name="description" content="Binghua Zhang is a back-end software engineer with more than ten years of experience across e-commerce, education, AI and social products. Open to roles in any location.">
 <meta property="og:title" content="Binghua Zhang — Software Engineer">
-<meta property="og:description" content="Back-end engineer with eight-plus years in Java and Spring. Best student, Master of Computing (Computer Science), Curtin University, 2025.">
+<meta property="og:description" content="Back-end software engineer with more than ten years of experience. Best student, Master of Computing (Computer Science), Curtin University, 2025.">
 <meta property="og:type" content="profile">
-<meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d6b57'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23f5f2ea'%3EBZ%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090d16" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%230d9488'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Segoe UI,Arial,sans-serif' font-size='26' font-weight='800' text-anchor='middle' fill='white'%3EBZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
 <script>
   document.documentElement.classList.add('js');
   try {
@@ -20,517 +23,579 @@
 </script>
 <style>
   :root {
-    --bg: #f5f2ea;
-    --surface: #fbf9f4;
-    --ink: #1b1c19;
-    --muted: #5b5e57;
-    --rule: #d8d3c5;
-    --accent: #1d6b57;
-    --accent-ink: #f7f5ef;
-    --wash: #e3ede7;
-    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
-    --gutter: clamp(20px, 5vw, 56px);
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --ink: #0f172a;
+    --muted: #55627a;
+    --line: #e1e7f1;
+    --brand: #2563eb;
+    --brand2: #0d9488;
+    --on-brand: #ffffff;
+    --soft: #edf2ff;
+    --soft-ink: #1e40af;
+    --mix: #ffffff;
+    --shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 8px 24px rgba(15, 23, 42, .06);
+    --shadow-lg: 0 2px 6px rgba(15, 23, 42, .06), 0 22px 48px rgba(15, 23, 42, .12);
+    --display: "Plus Jakarta Sans", "Segoe UI Variable Display", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --body: "Inter", "Segoe UI Variable Text", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --gutter: clamp(18px, 4.5vw, 40px);
     color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #111412;
-      --surface: #171b18;
-      --ink: #ecebe4;
-      --muted: #a0a69d;
-      --rule: #2b312c;
-      --accent: #7fd1b6;
-      --accent-ink: #0d1512;
-      --wash: #1a2924;
+      --bg: #090d16;
+      --card: #111827;
+      --ink: #f1f5f9;
+      --muted: #9ba8bf;
+      --line: #1f2a3d;
+      --brand: #60a5fa;
+      --brand2: #2dd4bf;
+      --on-brand: #06121f;
+      --soft: #15213b;
+      --soft-ink: #bfdbfe;
+      --mix: #111827;
+      --shadow: 0 0 0 1px rgba(255, 255, 255, .02), 0 10px 28px rgba(0, 0, 0, .35);
+      --shadow-lg: 0 0 0 1px rgba(255, 255, 255, .04), 0 24px 54px rgba(0, 0, 0, .5);
       color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #111412;
-    --surface: #171b18;
-    --ink: #ecebe4;
-    --muted: #a0a69d;
-    --rule: #2b312c;
-    --accent: #7fd1b6;
-    --accent-ink: #0d1512;
-    --wash: #1a2924;
+    --bg: #090d16;
+    --card: #111827;
+    --ink: #f1f5f9;
+    --muted: #9ba8bf;
+    --line: #1f2a3d;
+    --brand: #60a5fa;
+    --brand2: #2dd4bf;
+    --on-brand: #06121f;
+    --soft: #15213b;
+    --soft-ink: #bfdbfe;
+    --mix: #111827;
+    --shadow: 0 0 0 1px rgba(255, 255, 255, .02), 0 10px 28px rgba(0, 0, 0, .35);
+    --shadow-lg: 0 0 0 1px rgba(255, 255, 255, .04), 0 24px 54px rgba(0, 0, 0, .5);
     color-scheme: dark;
   }
 
   *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
+    font-family: var(--body);
+    font-size: 16.5px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
   a { color: inherit; }
-  h1, h2, h3, p, ul, dl, dd, figure { margin: 0; }
+  h1, h2, h3, h4, p, ul, dl, dd { margin: 0; }
   ul { padding: 0; list-style: none; }
-  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
-  ::selection { background: var(--accent); color: var(--accent-ink); }
+  svg { flex: none; }
+  :focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 6px; }
+  ::selection { background: var(--brand); color: var(--on-brand); }
 
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
-  .mono {
-    font-family: var(--mono);
-    font-size: 0.74rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .skip {
-    position: absolute; left: -999px; top: 8px;
-    background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 6px; z-index: 20;
-  }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 var(--gutter); }
+  .grad { background: linear-gradient(100deg, var(--brand), var(--brand2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 8px; z-index: 30; }
   .skip:focus { left: 8px; }
 
-  /* ---------- top bar ---------- */
+  /* ---------- nav ---------- */
   .top {
-    position: sticky; top: 0; z-index: 10;
-    background: color-mix(in srgb, var(--bg) 86%, transparent);
-    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--rule);
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    -webkit-backdrop-filter: saturate(160%) blur(14px); backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
   }
-  .top .wrap { display: flex; align-items: center; gap: 24px; height: 60px; }
-  .mark {
-    font-family: var(--serif); font-weight: 700; font-size: 1.15rem;
-    text-decoration: none; letter-spacing: 0.01em;
+  .top .wrap { display: flex; align-items: center; gap: 20px; height: 66px; }
+  .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-family: var(--display); font-weight: 700; font-size: 1.02rem; }
+  .logo {
+    width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--brand), var(--brand2)); color: var(--on-brand);
+    font-size: .82rem; font-weight: 800; letter-spacing: .02em;
   }
-  .mark span { color: var(--accent); }
-  .nav { margin-left: auto; display: flex; gap: 26px; }
-  .nav a {
-    text-decoration: none; color: var(--muted); font-size: 0.9rem;
-    padding: 6px 0; border-bottom: 1px solid transparent; transition: color .15s, border-color .15s;
-  }
-  .nav a:hover { color: var(--ink); border-color: var(--ink); }
+  .nav { margin-left: auto; display: flex; gap: 4px; }
+  .nav a { text-decoration: none; color: var(--muted); font-size: .92rem; font-weight: 500; padding: 8px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+  .nav a:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
   .theme {
-    appearance: none; border: 1px solid var(--rule); background: transparent; color: var(--muted);
-    width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
-    display: grid; place-items: center; transition: color .15s, border-color .15s;
+    appearance: none; border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    width: 38px; height: 38px; border-radius: 10px; cursor: pointer; display: grid; place-items: center; transition: color .15s, border-color .15s;
   }
-  .theme:hover { color: var(--ink); border-color: var(--ink); }
-  .theme svg { width: 16px; height: 16px; }
+  .theme:hover { color: var(--ink); border-color: var(--muted); }
 
-  /* ---------- hero ---------- */
-  .hero { padding: clamp(56px, 10vw, 120px) 0 clamp(48px, 7vw, 88px); }
-  .hero-grid {
-    display: grid; grid-template-columns: minmax(0, 1fr) 280px;
-    gap: clamp(24px, 5vw, 72px); align-items: end;
-  }
-  .eyebrow { color: var(--accent); display: flex; flex-wrap: wrap; gap: 6px 14px; }
-  .eyebrow i { font-style: normal; color: var(--rule); }
-  h1 {
-    font-family: var(--serif); font-weight: 600;
-    font-size: clamp(3.1rem, 10.5vw, 7.4rem);
-    line-height: 0.95; letter-spacing: -0.025em;
-    margin: 22px 0 28px;
-  }
-  .lede {
-    font-family: var(--serif);
-    font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.45;
-    max-width: 34em; text-wrap: pretty;
-  }
-  .lede em { font-style: normal; color: var(--accent); }
-  .status {
-    display: inline-flex; align-items: center; gap: 10px;
-    margin-top: 30px; padding: 8px 16px 8px 12px;
-    background: var(--wash); border-radius: 999px; font-size: 0.92rem;
-  }
-  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); position: relative; flex: none; }
-  .dot::after {
-    content: ""; position: absolute; inset: -5px; border-radius: 50%;
-    border: 1px solid var(--accent); opacity: 0; animation: ping 2.6s ease-out infinite;
-  }
-  @keyframes ping { 0% { transform: scale(.5); opacity: .7; } 80%, 100% { transform: scale(1.5); opacity: 0; } }
-  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  /* ---------- buttons, chips ---------- */
   .btn {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 13px 22px; border-radius: 8px; text-decoration: none;
-    font-weight: 600; font-size: 0.97rem; border: 1px solid var(--ink);
-    transition: transform .15s, background .15s, color .15s;
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 13px 22px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: .97rem;
+    border: 1px solid transparent; transition: transform .18s, box-shadow .18s, border-color .18s, background .18s;
   }
   .btn:hover { transform: translateY(-2px); }
-  .btn.solid { background: var(--ink); color: var(--bg); }
-  .btn.ghost:hover { background: var(--ink); color: var(--bg); }
-  .btn svg { width: 17px; height: 17px; }
+  .btn.primary { background: linear-gradient(100deg, var(--brand), var(--brand2)); color: var(--on-brand); box-shadow: 0 10px 26px color-mix(in srgb, var(--brand) 32%, transparent); }
+  .btn.primary:hover { box-shadow: 0 14px 34px color-mix(in srgb, var(--brand) 42%, transparent); }
+  .btn.line { background: var(--card); border-color: var(--line); color: var(--ink); }
+  .btn.line:hover { border-color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips li { font-size: .8rem; font-weight: 500; padding: 5px 11px; border-radius: 999px; background: var(--soft); color: var(--soft-ink); white-space: nowrap; }
 
-  .route { color: var(--muted); width: 100%; height: auto; display: block; }
-  .route .arc { stroke: var(--accent); stroke-dasharray: 3 6; }
-  .route .pin { fill: var(--accent); }
-  .route .halo { fill: none; stroke: var(--accent); opacity: .35; }
-  .route text { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; fill: currentColor; }
-  .route .place { fill: var(--ink); font-size: 11px; }
-
-  .facts {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    margin-top: clamp(48px, 7vw, 84px);
-    border-top: 1px solid var(--ink);
+  /* ---------- hero ---------- */
+  .hero { position: relative; overflow: hidden; padding: clamp(56px, 9vw, 112px) 0 clamp(56px, 8vw, 96px); }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(52% 60% at 88% 4%, color-mix(in srgb, var(--brand) 20%, transparent), transparent 70%),
+      radial-gradient(44% 52% at 4% 0%, color-mix(in srgb, var(--brand2) 16%, transparent), transparent 70%);
   }
-  .facts div { padding: 22px 24px 0 0; }
-  .facts div + div { padding-left: 24px; border-left: 1px solid var(--rule); }
-  .facts dt { font-family: var(--serif); font-size: clamp(2rem, 4.4vw, 3rem); line-height: 1; letter-spacing: -0.02em; }
-  .facts dd { color: var(--muted); font-size: 0.93rem; margin-top: 10px; max-width: 22em; }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .55;
+    background-image:
+      linear-gradient(color-mix(in srgb, var(--ink) 7%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in srgb, var(--ink) 7%, transparent) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(70% 70% at 50% 0%, #000, transparent 75%);
+    mask-image: radial-gradient(70% 70% at 50% 0%, #000, transparent 75%);
+  }
+  .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .status {
+    display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px 7px 12px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow); font-size: .88rem; font-weight: 500;
+  }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: #22c55e; position: relative; flex: none; }
+  .dot::after { content: ""; position: absolute; inset: -5px; border-radius: 50%; border: 1.5px solid #22c55e; opacity: 0; animation: ping 2.4s ease-out infinite; }
+  @keyframes ping { 0% { transform: scale(.5); opacity: .8; } 80%, 100% { transform: scale(1.5); opacity: 0; } }
+  .hello { font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: var(--muted); margin-top: 26px; }
+  h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2.7rem, 7.4vw, 5rem); line-height: 1.04; letter-spacing: -0.03em; word-spacing: .05em; margin: 4px 0 20px; }
+  .lede { font-size: clamp(1.06rem, 1.7vw, 1.24rem); line-height: 1.6; color: var(--muted); max-width: 33em; text-wrap: pretty; }
+  .lede strong { color: var(--ink); font-weight: 600; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .where { display: flex; align-items: center; gap: 8px; margin-top: 24px; color: var(--muted); font-size: .92rem; }
+
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 20px; box-shadow: var(--shadow); }
+  .stat b { display: block; font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 3.6vw, 2.7rem); line-height: 1; letter-spacing: -0.03em; }
+  .stat span { display: block; margin-top: 10px; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+  .stat:nth-child(even) { transform: translateY(22px); }
 
   /* ---------- sections ---------- */
-  section.block { border-top: 1px solid var(--rule); padding: clamp(48px, 7vw, 88px) 0; }
-  .block-grid { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: clamp(24px, 5vw, 72px); }
-  .label { color: var(--muted); position: sticky; top: 84px; align-self: start; }
-  .label b { color: var(--accent); font-weight: 400; margin-right: 10px; }
-  h2 {
-    font-family: var(--serif); font-weight: 600;
-    font-size: clamp(1.7rem, 3.4vw, 2.5rem); line-height: 1.15; letter-spacing: -0.015em;
-    max-width: 20em; text-wrap: balance; margin-bottom: 28px;
-  }
-  .prose p { max-width: 38em; }
-  .prose p + p { margin-top: 1.1em; }
+  .section { padding: clamp(56px, 8vw, 100px) 0; }
+  .section.alt { background: color-mix(in srgb, var(--card) 62%, var(--bg)); border-block: 1px solid var(--line); }
+  .head { max-width: 46em; margin-bottom: clamp(28px, 4vw, 44px); }
+  .kicker { font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--brand); }
+  h2 { font-family: var(--display); font-weight: 800; font-size: clamp(1.8rem, 3.8vw, 2.6rem); line-height: 1.16; letter-spacing: -0.018em; word-spacing: .06em; margin-top: 10px; text-wrap: balance; }
+  .head p { color: var(--muted); margin-top: 14px; font-size: 1.04rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
 
-  /* experience */
-  .role { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 28px; padding: 30px 0; border-top: 1px solid var(--rule); }
-  .role:first-of-type { border-top: 1px solid var(--ink); }
-  .when { color: var(--muted); padding-top: 6px; }
-  .when span { display: block; margin-top: 6px; opacity: .8; }
-  h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; line-height: 1.25; }
-  .org { color: var(--accent); font-weight: 600; margin-top: 2px; }
-  .stint { margin-top: 20px; }
-  .stint-when { color: var(--muted); margin-bottom: 8px; }
-  .points li { position: relative; padding-left: 20px; max-width: 40em; }
-  .points li + li { margin-top: 6px; }
-  .points li::before { content: ""; position: absolute; left: 0; top: .78em; width: 9px; height: 1px; background: var(--muted); }
-  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
-  .tags li {
-    font-family: var(--mono); font-size: 0.76rem; letter-spacing: .02em;
-    padding: 4px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface);
-  }
+  /* about */
+  .about { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); align-items: start; }
+  .about .prose p + p { margin-top: 1.05em; }
+  .about .prose p { color: var(--muted); font-size: 1.04rem; }
+  .about .prose p:first-child { color: var(--ink); font-size: 1.14rem; }
+  .facts { padding: 8px 24px; }
+  .facts div { display: grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 15px 0; }
+  .facts div + div { border-top: 1px solid var(--line); }
+  .facts dt { color: var(--muted); font-size: .86rem; padding-top: 2px; }
+  .facts dd { font-weight: 500; font-size: .96rem; }
 
-  /* education */
-  .school { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 28px; padding: 26px 0; border-top: 1px solid var(--rule); }
-  .school:first-of-type { border-top: 1px solid var(--ink); }
-  .school p { color: var(--muted); }
+  /* projects */
+  .projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .project { --tone: var(--brand); padding: 28px; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: transform .22s, box-shadow .22s, border-color .22s; }
+  .project::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--tone); opacity: .9; }
+  .project:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: color-mix(in srgb, var(--tone) 45%, var(--line)); }
+  .emblem { --tone: var(--brand); }
+  .project .emblem { --tone: inherit; }
+  .emblem { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: color-mix(in srgb, var(--tone) 14%, var(--mix)); color: color-mix(in srgb, var(--tone) 82%, var(--ink)); }
+  .emblem .icon { width: 23px; height: 23px; }
+  h3 { font-family: var(--display); font-weight: 700; font-size: 1.45rem; line-height: 1.2; letter-spacing: -0.012em; word-spacing: .04em; margin-top: 6px; }
+  .project > p { color: var(--muted); margin-top: 12px; }
+  .project .chips { margin-top: auto; padding-top: 20px; }
+  .project h3 { margin-top: 20px; }
+  .t-green { --tone: #16a34a; } .t-pink { --tone: #db2777; } .t-amber { --tone: #d97706; } .t-blue { --tone: #2563eb; } .t-teal { --tone: #0d9488; } .t-violet { --tone: #7c3aed; }
 
-  /* awards */
-  .award { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 28px; padding: 28px 0; border-top: 1px solid var(--rule); }
-  .award:first-of-type { border-top: 1px solid var(--ink); }
-  .year { font-family: var(--serif); font-size: 2.3rem; line-height: 1; letter-spacing: -0.02em; color: var(--accent); }
-  .year small { display: block; font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; color: var(--muted); margin-top: 10px; text-transform: uppercase; }
-  .award p { color: var(--muted); max-width: 38em; margin-top: 6px; }
-  .sems { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-  .sems li {
-    font-family: var(--mono); font-size: .76rem; padding: 4px 10px; border-radius: 6px;
-    background: var(--wash); color: var(--ink);
-  }
+  /* timeline */
+  .timeline { position: relative; display: grid; gap: 20px; padding-left: 30px; }
+  .timeline::before { content: ""; position: absolute; left: 6px; top: 10px; bottom: 10px; width: 2px; border-radius: 2px; background: linear-gradient(var(--brand), var(--brand2)); opacity: .45; }
+  .job { position: relative; padding: 26px 28px; }
+  .job::before { content: ""; position: absolute; left: -30px; top: 32px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 3px solid var(--brand); }
+  .job-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 20px; }
+  .job-head .org { color: var(--brand); font-weight: 600; margin-top: 2px; }
+  .job-head .when { color: var(--muted); font-size: .9rem; font-weight: 500; text-align: right; }
+  .stint { margin-top: 18px; }
+  .stint-when { font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .points li { position: relative; padding-left: 20px; color: var(--muted); }
+  .points li + li { margin-top: 5px; }
+  .points li::before { content: ""; position: absolute; left: 2px; top: .68em; width: 6px; height: 6px; border-radius: 50%; background: var(--brand2); }
+  .job .chips { margin-top: 20px; }
+
+  /* education + awards */
+  .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 20px; align-items: start; }
+  .stack { display: grid; gap: 16px; }
+  .col-title { font-family: var(--display); font-weight: 700; font-size: 1.15rem; margin-bottom: 16px; }
+  .row { padding: 22px 24px; display: grid; grid-template-columns: 46px 1fr; gap: 16px; align-items: start; }
+  .row .emblem { width: 46px; height: 46px; }
+  .row h4 { font-family: var(--display); font-weight: 700; font-size: 1.08rem; line-height: 1.3; }
+  .row p { color: var(--muted); font-size: .94rem; margin-top: 4px; }
+  .row .meta { font-size: .8rem; font-weight: 600; color: var(--brand); margin-top: 0; margin-bottom: 4px; letter-spacing: .04em; }
+  .row .chips { margin-top: 12px; }
 
   /* skills */
-  .skill-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 28px; padding: 20px 0; border-top: 1px solid var(--rule); align-items: baseline; }
-  .skill-row:first-of-type { border-top: 1px solid var(--ink); }
-  .skill-row dt { color: var(--muted); }
-  .skill-row dd { font-family: var(--serif); font-size: 1.25rem; line-height: 1.5; display: flex; flex-wrap: wrap; }
-  .skill-row dd span { white-space: nowrap; }
-  .skill-row dd span:not(:last-child)::after { content: "·"; color: var(--accent); margin: 0 .55em; }
+  .skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .skill { padding: 22px 24px; border-radius: 16px; }
+  .skill h4 { font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
 
   /* contact */
-  .contact { background: var(--ink); color: var(--bg); border-top: 0; }
-  .contact .label, .contact .prose p { color: color-mix(in srgb, var(--bg) 70%, var(--ink)); }
-  .contact .label b { color: var(--bg); }
-  .contact h2 { font-size: clamp(2rem, 5vw, 3.6rem); max-width: 14em; }
-  .contact .btn { border-color: var(--bg); background: var(--bg); color: var(--ink); margin-top: 30px; }
+  .contact {
+    position: relative; overflow: hidden; border-radius: 28px; padding: clamp(36px, 7vw, 72px);
+    background: linear-gradient(125deg, #1d4ed8, #0f766e); color: #fff; text-align: center;
+  }
+  .contact::before { content: ""; position: absolute; inset: 0; background: radial-gradient(50% 80% at 85% 0%, rgba(255, 255, 255, .22), transparent 70%), radial-gradient(40% 70% at 0% 100%, rgba(255, 255, 255, .14), transparent 70%); }
+  .contact > * { position: relative; }
+  .contact h2 { margin: 0 auto; max-width: 16em; font-size: clamp(1.9rem, 4.6vw, 3.1rem); }
+  .contact p { margin: 16px auto 0; max-width: 34em; color: rgba(255, 255, 255, .86); font-size: 1.06rem; }
+  .contact .btn { margin-top: 30px; background: #fff; color: #0f2a5f; box-shadow: 0 12px 30px rgba(0, 0, 0, .22); }
 
-  footer { padding: 26px 0 40px; color: var(--muted); }
+  footer { padding: 28px 0 44px; color: var(--muted); font-size: .88rem; }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 
   /* ---------- motion ---------- */
-  .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+  .js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1); }
   .js .reveal.in { opacity: 1; transform: none; }
+  .js .stat.reveal:nth-child(even) { transform: translateY(38px); }
+  .js .stat.reveal.in:nth-child(even) { transform: translateY(22px); }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .js .reveal { opacity: 1; transform: none; transition: none; }
     .dot::after { animation: none; }
-    .btn:hover { transform: none; }
+    .btn:hover, .project:hover { transform: none; }
   }
 
-  /* ---------- small screens ---------- */
-  @media (max-width: 860px) {
+  /* ---------- responsive ---------- */
+  @media (max-width: 940px) {
     .nav a:not(.keep) { display: none; }
-    .hero-grid { grid-template-columns: 1fr; }
-    .route { max-width: 220px; margin-top: 8px; }
-    .block-grid { grid-template-columns: 1fr; gap: 18px; }
-    .label { position: static; }
+    .hero .wrap, .about, .two { grid-template-columns: 1fr; }
+    .stat:nth-child(even),
+    .js .stat.reveal.in:nth-child(even) { transform: none; }
+    .projects, .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  @media (max-width: 620px) {
+  @media (max-width: 680px) {
     body { font-size: 16px; }
-    .hero figure { display: none; }
-    .facts { grid-template-columns: 1fr; }
-    .facts div, .facts div + div { padding: 18px 0; border-left: 0; }
-    .facts div + div { border-top: 1px solid var(--rule); }
-    .facts dd { margin-top: 6px; }
-    .role, .school, .award, .skill-row { grid-template-columns: 1fr; gap: 10px; }
-    .when { padding-top: 0; }
-    .when span { display: inline; margin: 0 0 0 10px; }
-    .year { font-size: 1.9rem; }
-    .year small { display: inline; margin-left: 10px; }
-    .btn { width: 100%; justify-content: center; }
+    .projects, .skills { grid-template-columns: 1fr; }
+    .project { padding: 24px 22px; }
+    .job { padding: 22px 20px; }
+    .job-head .when { text-align: left; }
+    .brand span.name { display: none; }
+    .cta .btn { width: 100%; }
+    .facts div { grid-template-columns: 84px 1fr; }
   }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.800A9 9 0 1 1 11.200 3a7 7 0 0 0 9.800 9.800z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.680 13.390a2 2 0 0 0 2 1.610h9.720a2 2 0 0 0 2-1.610L23 6H6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.500a8.380 8.380 0 0 1-.900 3.800 8.500 8.500 0 0 1-7.600 4.700 8.380 8.380 0 0 1-3.800-.900L3 21l1.900-5.700a8.380 8.380 0 0 1-.900-3.800 8.500 8.500 0 0 1 4.700-7.600 8.380 8.380 0 0 1 3.800-.900h.500a8.480 8.480 0 0 1 8 8v.500z"/><path d="M12 8.500l.9 2.100 2.100.9-2.100.9-.9 2.100-.9-2.100-2.100-.9 2.100-.9z"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.870"/><path d="M16 3.130a4 4 0 0 1 0 7.750"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.730l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.730l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.270 6.960 12 12.010 20.730 6.960"/><line x1="12" y1="22.080" x2="12" y2="12"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.240 7.760 14.120 14.120 7.760 16.240 9.880 9.880 16.240 7.760"/></symbol>
+  <symbol id="i-activity" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.210 13.890 7 23 12 20 17 23 15.790 13.880"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.090 8.260 22 9.270 17 14.140 18.180 21.020 12 17.770 5.820 21.020 7 14.140 2 9.270 8.910 8.260 12 2"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+</svg>
+
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="#top" aria-label="Binghua Zhang, back to top">Binghua<span>.</span></a>
+    <a class="brand" href="#top" aria-label="Binghua Zhang, back to top"><span class="logo">BZ</span><span class="name">Binghua Zhang</span></a>
     <nav class="nav" aria-label="Sections">
       <a href="#about">About</a>
+      <a href="#expertise">What I do</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
-      <a href="#awards">Awards</a>
       <a href="#skills">Skills</a>
       <a class="keep" href="#contact">Contact</a>
     </nav>
     <button class="theme" type="button" id="theme" aria-label="Switch between light and dark theme">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.500 10.500Z"/></svg>
+      <svg class="icon"><use href="#i-moon"/></svg>
     </button>
   </div>
 </header>
 
 <main id="main">
-  <div class="hero wrap" id="top">
-    <div class="hero-grid">
+  <section class="hero" id="top">
+    <div class="wrap">
       <div>
-        <p class="mono eyebrow reveal"><span>Software Engineer</span><i>/</i><span>Perth, Western Australia</span></p>
-        <h1 class="reveal">Binghua Zhang</h1>
-        <p class="lede reveal">Back-end engineer with eight-plus years of building and maintaining Java systems in industry, and the <em>2025 best student</em> in Curtin University&rsquo;s Master of Computing (Computer Science).</p>
-        <p class="status reveal"><span class="dot" aria-hidden="true"></span>Open to software engineer roles &mdash; on-site, hybrid or remote</p>
+        <p class="status reveal"><span class="dot" aria-hidden="true"></span>Open to work &middot; any location</p>
+        <p class="hello reveal">Hi, I&rsquo;m</p>
+        <h1 class="reveal"><span class="grad">Binghua Zhang</span></h1>
+        <p class="lede reveal">A <strong>back-end software engineer</strong> who has been building software since 2012. I design, build and run the server side of mobile and web products, from the first data model through to a live service.</p>
         <div class="cta reveal">
-          <a class="btn solid" href="https://www.linkedin.com/in/binghua-zhang-a486a22b7/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.500 2.500 0 0 1 0-5ZM3 9.750h4V21H3V9.750Zm6.500 0h3.800v1.600h.06c.53-.95 1.830-1.900 3.740-1.900 4 0 4.700 2.500 4.700 5.800V21h-4v-5.100c0-1.300-.03-2.900-1.800-2.900s-2.100 1.350-2.100 2.800V21h-4V9.750Z"/></svg>
-            Connect on LinkedIn
-          </a>
-          <a class="btn ghost" href="#experience">See my experience</a>
+          <a class="btn primary" href="#expertise">See what I do <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a class="btn line" href="https://www.linkedin.com/in/binghua-zhang-a486a22b7/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg> LinkedIn</a>
         </div>
+        <p class="where reveal"><svg class="icon"><use href="#i-pin"/></svg>Based in Australia &middot; happy to relocate or work remotely</p>
       </div>
 
-      <figure class="reveal" aria-label="A route from Hangzhou, China to Perth, Western Australia">
-        <svg class="route" viewBox="0 0 280 330" fill="none" stroke="currentColor" stroke-width="1" role="img" aria-hidden="true">
-          <line x1="0" y1="165" x2="280" y2="165" stroke-dasharray="1 5" opacity=".7"/>
-          <text x="0" y="158" stroke="none">EQUATOR</text>
-          <path class="arc" d="M178 46 C 236 130, 214 232, 142 286" stroke-width="1.4"/>
-          <circle class="halo" cx="178" cy="46" r="11"/>
-          <circle class="pin" cx="178" cy="46" r="4.500" stroke="none"/>
-          <text class="place" x="160" y="42" text-anchor="end" stroke="none">HANGZHOU</text>
-          <text x="160" y="57" text-anchor="end" stroke="none">30.3&deg;N &middot; 2012&ndash;2022</text>
-          <circle class="halo" cx="142" cy="286" r="11"/>
-          <circle class="pin" cx="142" cy="286" r="4.500" stroke="none"/>
-          <text class="place" x="124" y="282" text-anchor="end" stroke="none">PERTH</text>
-          <text x="124" y="297" text-anchor="end" stroke="none">31.9&deg;S &middot; 2024&ndash;</text>
-        </svg>
-      </figure>
-    </div>
-
-    <dl class="facts reveal">
-      <div>
-        <dt>8+ years</dt>
-        <dd>as a software engineer, across two companies in Hangzhou</dd>
-      </div>
-      <div>
-        <dt>Highest CWA</dt>
-        <dd>in the Master of Computing (Computer Science major), Curtin University, 2025</dd>
-      </div>
-      <div>
-        <dt>4 of 4</dt>
-        <dd>semesters from 2024 to 2025 recognised with a Dean&rsquo;s Letter of Commendation</dd>
-      </div>
-    </dl>
-  </div>
-
-  <section class="block" id="about">
-    <div class="wrap block-grid">
-      <p class="mono label"><b>01</b>About</p>
-      <div class="prose reveal">
-        <h2>An experienced engineer who went back to university, and finished at the top of the course.</h2>
-        <p>I spent the better part of a decade in Hangzhou building and looking after back-end systems, first at Servyou Software Group and then at Hangzhou Zhexin IT. Most of that work was in Java and the Spring ecosystem, alongside Node.js, TypeScript, relational and document databases, and a good share of data analysis and visualisation.</p>
-        <p>In 2024 I came to Perth for a Master of Computing (Computer Science) at Curtin University. I received a Dean&rsquo;s Letter of Commendation in each of four consecutive semesters, the Curtin Institute for Data Science Software Award for 2024, and the Amristar Master of Computing Prize for 2025, awarded to the best student in the course.</p>
-        <p>I pick things up quickly, work hard, and take the time to understand a problem properly before I solve it. I&rsquo;m now looking for a software engineering role in Perth or remote.</p>
+      <div class="stats">
+        <div class="stat reveal"><b class="grad">10+</b><span>years building software, since 2012</span></div>
+        <div class="stat reveal"><b class="grad">4</b><span>product areas: e&#8209;commerce, education, AI and social</span></div>
+        <div class="stat reveal"><b class="grad">#1</b><span>best student, Master of Computing (Computer Science), Curtin, 2025</span></div>
+        <div class="stat reveal"><b class="grad">4&times;</b><span>Dean&rsquo;s Letter of Commendation, four semesters in a row</span></div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="experience">
-    <div class="wrap block-grid">
-      <p class="mono label"><b>02</b>Experience</p>
-      <div>
-        <h2 class="reveal">Eight years of production back-end work.</h2>
-
-        <article class="role reveal">
-          <p class="mono when">2015 &ndash; 2022<span>Hangzhou, China</span></p>
-          <div>
-            <h3>Software Engineer</h3>
-            <p class="org">Hangzhou Zhexin IT Co., Ltd</p>
-
-            <div class="stint">
-              <p class="mono stint-when">Jan 2021 &ndash; Jun 2022</p>
-              <ul class="points">
-                <li>Analysed and implemented system requirements as part of day-to-day maintenance.</li>
-                <li>Fixed critical bugs to keep systems stable and reliable.</li>
-                <li>Analysed company data to identify issues and inform business development planning.</li>
-                <li>Built and maintained data-visualisation platforms that supported decision-making.</li>
-              </ul>
-            </div>
-
-            <div class="stint">
-              <p class="mono stint-when">May 2015 &ndash; Jul 2019</p>
-              <ul class="points">
-                <li>Played the main role in daily maintenance, analysing and implementing new requirements.</li>
-                <li>Fixed critical and urgent bugs so that issues were resolved on time.</li>
-              </ul>
-            </div>
-
-            <ul class="tags" aria-label="Technologies">
-              <li>Java</li><li>Spring</li><li>Node.js</li><li>TypeScript</li><li>Netty</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>AWS</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="role reveal">
-          <p class="mono when">2012 &ndash; 2015<span>Hangzhou, China</span></p>
-          <div>
-            <h3>Software Engineer</h3>
-            <p class="org">Servyou Software Group Co., Ltd</p>
-
-            <div class="stint">
-              <p class="mono stint-when">Jun 2012 &ndash; Apr 2015</p>
-              <ul class="points">
-                <li>Took a leading role in several projects, implementing most of the back-end functionality in Java.</li>
-                <li>Coordinated with the front-end team and stepped in to fix front-end bugs when needed.</li>
-                <li>Met with clients to gather, analyse and discuss requirements, keeping business needs and technical solutions aligned.</li>
-                <li>Worked with engineers from partner companies on joint projects to deliver integrated solutions.</li>
-                <li>Resolved critical and urgent bugs to keep systems stable and reliable.</li>
-              </ul>
-            </div>
-
-            <ul class="tags" aria-label="Technologies">
-              <li>Java</li><li>Spring MVC</li><li>JavaScript</li><li>Oracle Database</li><li>SQL</li>
-            </ul>
-          </div>
-        </article>
+  <section class="section alt" id="about">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">About</p>
+        <h2>An experienced engineer who takes products from a blank page to production.</h2>
       </div>
-    </div>
-  </section>
-
-  <section class="block" id="education">
-    <div class="wrap block-grid">
-      <p class="mono label"><b>03</b>Education</p>
-      <div>
-        <h2 class="reveal">Two degrees in computer science, twelve years apart.</h2>
-
-        <article class="school reveal">
-          <p class="mono when">2024 &ndash; 2026<span>Perth, Australia</span></p>
-          <div>
-            <h3>Curtin University</h3>
-            <p>Master of Computing, Computer Science major</p>
-          </div>
-        </article>
-
-        <article class="school reveal">
-          <p class="mono when">2010 &ndash; 2012<span>Hangzhou, China</span></p>
-          <div>
-            <h3>Zhejiang University of Technology</h3>
-            <p>Bachelor&rsquo;s degree, Computer Science</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="awards">
-    <div class="wrap block-grid">
-      <p class="mono label"><b>04</b>Awards</p>
-      <div>
-        <h2 class="reveal">Recognised by Curtin University in every semester from 2024 to 2025.</h2>
-
-        <article class="award reveal">
-          <p class="year">2025<small>School prize</small></p>
-          <div>
-            <h3>Amristar Master of Computing Prize</h3>
-            <p>Best student in the Master of Computing (Computer Science major) with the highest course weighted average. Awarded by the School of Electrical Engineering, Computing and Mathematical Sciences.</p>
-          </div>
-        </article>
-
-        <article class="award reveal">
-          <p class="year">2024<small>School award</small></p>
-          <div>
-            <h3>Curtin Institute for Data Science Software Award</h3>
-            <p>Best postgraduate student in the Fundamentals of Programming unit. Awarded by the School of Electrical Engineering, Computing and Mathematical Sciences.</p>
-          </div>
-        </article>
-
-        <article class="award reveal">
-          <p class="year">&times;4<small>2024 &ndash; 2025</small></p>
-          <div>
-            <h3>Dean&rsquo;s Letter of Commendation</h3>
-            <p>Recognition of academic achievement from the Faculty of Science and Engineering, given for a semester weighted average of 80 or higher. Received in four consecutive semesters.</p>
-            <ul class="sems" aria-label="Semesters">
-              <li>Semester 1, 2024</li><li>Semester 2, 2024</li><li>Semester 1, 2025</li><li>Semester 2, 2025</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="skills">
-    <div class="wrap block-grid">
-      <p class="mono label"><b>05</b>Skills</p>
-      <div>
-        <h2 class="reveal">Back end first, comfortable across the stack.</h2>
-        <dl class="reveal">
-          <div class="skill-row">
-            <dt class="mono">Languages</dt>
-            <dd><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>SQL</span></dd>
-          </div>
-          <div class="skill-row">
-            <dt class="mono">Back end</dt>
-            <dd><span>Spring Framework</span><span>Spring MVC</span><span>Netty</span><span>Node.js</span></dd>
-          </div>
-          <div class="skill-row">
-            <dt class="mono">Front end</dt>
-            <dd><span>React</span><span>Vue.js</span></dd>
-          </div>
-          <div class="skill-row">
-            <dt class="mono">Data</dt>
-            <dd><span>MySQL</span><span>Oracle Database</span><span>MongoDB</span><span>Redis</span></dd>
-          </div>
-          <div class="skill-row">
-            <dt class="mono">Cloud &amp; practice</dt>
-            <dd><span>AWS</span><span>Software design</span><span>Web engineering</span></dd>
-          </div>
+      <div class="about">
+        <div class="prose reveal">
+          <p>I&rsquo;ve been writing software for a living since 2012. I spent most of a decade in Hangzhou building and looking after back-end systems at Servyou Software Group and Hangzhou Zhexin IT, along with a good share of data analysis and reporting work.</p>
+          <p>Since 2024 I&rsquo;ve been based in Australia, working as a back-end developer on consumer mobile apps across e-commerce, education, AI and social. I&rsquo;m often the only back-end developer on the team, so I&rsquo;m used to owning the whole server side, from the first design through to a live service.</p>
+          <p>Over the same period I studied for a Master of Computing (Computer Science) at Curtin University, earning a Dean&rsquo;s Letter of Commendation in four consecutive semesters and the 2025 prize for the best student in the course.</p>
+          <p>I pick things up quickly, work hard, and take the time to understand a problem properly before I solve it.</p>
+        </div>
+        <dl class="card facts reveal">
+          <div><dt>Focus</dt><dd>Back-end software engineering</dd></div>
+          <div><dt>Looking for</dt><dd>Software engineer roles</dd></div>
+          <div><dt>Location</dt><dd>Open to any location</dd></div>
+          <div><dt>Work style</dt><dd>On-site, hybrid or remote</dd></div>
+          <div><dt>Languages</dt><dd>English, Mandarin</dd></div>
         </dl>
       </div>
     </div>
   </section>
 
-  <section class="block contact" id="contact">
-    <div class="wrap block-grid">
-      <p class="mono label"><b>06</b>Contact</p>
-      <div class="prose reveal">
-        <h2>Hiring a software engineer in Perth? Let&rsquo;s talk.</h2>
-        <p>The quickest way to reach me is a message on LinkedIn. I&rsquo;m open to on-site, hybrid and remote roles.</p>
-        <a class="btn" href="https://www.linkedin.com/in/binghua-zhang-a486a22b7/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.500 2.500 0 0 1 0-5ZM3 9.750h4V21H3V9.750Zm6.500 0h3.800v1.600h.06c.53-.95 1.830-1.900 3.740-1.900 4 0 4.700 2.500 4.700 5.800V21h-4v-5.100c0-1.300-.03-2.900-1.800-2.900s-2.100 1.350-2.100 2.800V21h-4V9.750Z"/></svg>
-          Message me on LinkedIn
-        </a>
+  <section class="section" id="expertise">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">What I do</p>
+        <h2>The server side of a product, end to end.</h2>
+        <p>I&rsquo;m often the only back-end developer on a team, so I&rsquo;m used to owning everything behind the screen. These are the areas I work in most.</p>
+      </div>
+
+      <div class="projects">
+        <article class="card project t-blue reveal">
+          <span class="emblem"><svg class="icon"><use href="#i-box"/></svg></span>
+          <h3>Back-end systems &amp; APIs</h3>
+          <p>I design and build complete server sides for mobile apps and web consoles: data models, APIs, sign-in and permissions, background jobs, and documentation that other developers can build against.</p>
+          <ul class="chips"><li>Node.js</li><li>TypeScript</li><li>Java</li><li>Spring</li><li>REST APIs</li></ul>
+        </article>
+
+        <article class="card project t-pink reveal">
+          <span class="emblem"><svg class="icon"><use href="#i-chat"/></svg></span>
+          <h3>AI features</h3>
+          <p>I put AI to work inside real products: assistants that keep context over long conversations, image generation, content written from a user&rsquo;s own documents, and matching by meaning instead of keywords.</p>
+          <ul class="chips"><li>LLM integration</li><li>Conversational memory</li><li>Image generation</li><li>Semantic search</li><li>Python</li></ul>
+        </article>
+
+        <article class="card project t-green reveal">
+          <span class="emblem"><svg class="icon"><use href="#i-cart"/></svg></span>
+          <h3>Payments &amp; commerce</h3>
+          <p>Catalogues, pricing and promotions, carts and checkout, orders and refunds, coupons and loyalty points, with online payment by card and the popular digital wallets.</p>
+          <ul class="chips"><li>Stripe</li><li>WeChat Pay</li><li>Alipay</li><li>Orders</li><li>Promotions</li></ul>
+        </article>
+
+        <article class="card project t-amber reveal">
+          <span class="emblem"><svg class="icon"><use href="#i-users"/></svg></span>
+          <h3>Messaging &amp; community</h3>
+          <p>Real-time chat, push notifications, feeds, follows and groups, along with the reporting, blocking and moderation tools that keep a community safe.</p>
+          <ul class="chips"><li>Instant messaging</li><li>Push notifications</li><li>Feeds</li><li>Moderation</li></ul>
+        </article>
+
+        <article class="card project t-teal reveal">
+          <span class="emblem"><svg class="icon"><use href="#i-activity"/></svg></span>
+          <h3>Data &amp; operations</h3>
+          <p>Database design, analysis, reporting and dashboards, and the operational side of a business such as stock control, warehouse picking and delivery planning.</p>
+          <ul class="chips"><li>MongoDB</li><li>MySQL</li><li>Redis</li><li>Reporting</li><li>Logistics</li></ul>
+        </article>
+
+        <article class="card project t-violet reveal">
+          <span class="emblem"><svg class="icon"><use href="#i-compass"/></svg></span>
+          <h3>Cloud &amp; delivery</h3>
+          <p>I take services to production and keep them running: deployment, file storage, testing and releases, and fixing urgent problems quickly when they come up.</p>
+          <ul class="chips"><li>AWS</li><li>Deployment</li><li>Automated testing</li><li>Git</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="experience">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Experience</p>
+        <h2>Where I&rsquo;ve worked.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="card job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Software Engineer</h3>
+              <p class="org">Hangzhou Zhexin IT Co., Ltd</p>
+            </div>
+            <p class="when">2015 to 2022<br>Hangzhou, China</p>
+          </div>
+          <div class="stint">
+            <p class="stint-when">Jan 2021 to Jun 2022</p>
+            <ul class="points">
+              <li>Analysed and implemented system requirements as part of day-to-day maintenance.</li>
+              <li>Fixed critical bugs to keep systems stable and reliable.</li>
+              <li>Analysed company data to identify issues and inform business development planning.</li>
+              <li>Built and maintained data-visualisation platforms that supported decision-making.</li>
+            </ul>
+          </div>
+          <div class="stint">
+            <p class="stint-when">May 2015 to Jul 2019</p>
+            <ul class="points">
+              <li>Played the main role in daily maintenance, analysing and implementing new requirements.</li>
+              <li>Fixed critical and urgent bugs so that issues were resolved on time.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Software Engineer</h3>
+              <p class="org">Servyou Software Group Co., Ltd</p>
+            </div>
+            <p class="when">2012 to 2015<br>Hangzhou, China</p>
+          </div>
+          <div class="stint">
+            <ul class="points">
+              <li>Took a leading role in several projects and implemented most of their back-end functionality.</li>
+              <li>Coordinated with the front-end team and stepped in to fix front-end bugs when needed.</li>
+              <li>Met with clients to gather, analyse and discuss requirements, keeping business needs and technical solutions aligned.</li>
+              <li>Worked with engineers from partner companies on joint projects to deliver integrated solutions.</li>
+              <li>Resolved critical and urgent bugs to keep systems stable and reliable.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Education &amp; awards</p>
+        <h2>Top of the course at Curtin University.</h2>
+      </div>
+
+      <div class="two">
+        <div>
+          <h3 class="col-title reveal">Education</h3>
+          <div class="stack">
+            <article class="card row reveal">
+              <span class="emblem"><svg class="icon"><use href="#i-cap"/></svg></span>
+              <div>
+                <p class="meta">2024 to 2026 &middot; Perth, Australia</p>
+                <h4>Curtin University</h4>
+                <p>Master of Computing, Computer Science major</p>
+              </div>
+            </article>
+            <article class="card row reveal">
+              <span class="emblem"><svg class="icon"><use href="#i-cap"/></svg></span>
+              <div>
+                <p class="meta">2010 to 2012 &middot; Hangzhou, China</p>
+                <h4>Zhejiang University of Technology</h4>
+                <p>Bachelor&rsquo;s degree, Computer Science</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="col-title reveal">Awards</h3>
+          <div class="stack">
+            <article class="card row reveal">
+              <span class="emblem"><svg class="icon"><use href="#i-award"/></svg></span>
+              <div>
+                <p class="meta">2025 &middot; Curtin University</p>
+                <h4>Amristar Master of Computing Prize</h4>
+                <p>Best student in the Master of Computing (Computer Science major), with the highest course weighted average.</p>
+              </div>
+            </article>
+            <article class="card row reveal">
+              <span class="emblem"><svg class="icon"><use href="#i-star"/></svg></span>
+              <div>
+                <p class="meta">2024 &middot; Curtin University</p>
+                <h4>Curtin Institute for Data Science Software Award</h4>
+                <p>Best postgraduate student in the Fundamentals of Programming unit.</p>
+              </div>
+            </article>
+            <article class="card row reveal">
+              <span class="emblem"><svg class="icon"><use href="#i-file"/></svg></span>
+              <div>
+                <p class="meta">2024 to 2025 &middot; four semesters in a row</p>
+                <h4>Dean&rsquo;s Letter of Commendation</h4>
+                <p>Given by the Faculty of Science and Engineering for a semester weighted average of 80 or higher.</p>
+                <ul class="chips"><li>Sem 1, 2024</li><li>Sem 2, 2024</li><li>Sem 1, 2025</li><li>Sem 2, 2025</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Skills</p>
+        <h2>Back end first, comfortable across the stack.</h2>
+      </div>
+      <div class="skills">
+        <div class="card skill reveal">
+          <h4>Languages</h4>
+          <ul class="chips"><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li></ul>
+        </div>
+        <div class="card skill reveal">
+          <h4>Back end</h4>
+          <ul class="chips"><li>Node.js</li><li>Express</li><li>Spring Framework</li><li>Spring MVC</li><li>Netty</li><li>FastAPI</li></ul>
+        </div>
+        <div class="card skill reveal">
+          <h4>Data</h4>
+          <ul class="chips"><li>MongoDB</li><li>MySQL</li><li>Oracle Database</li><li>Redis</li></ul>
+        </div>
+        <div class="card skill reveal">
+          <h4>Front end</h4>
+          <ul class="chips"><li>React</li><li>Next.js</li><li>Vue.js</li></ul>
+        </div>
+        <div class="card skill reveal">
+          <h4>Cloud &amp; practice</h4>
+          <ul class="chips"><li>AWS</li><li>Software design</li><li>API design</li><li>Automated testing</li><li>Git</li></ul>
+        </div>
+        <div class="card skill reveal">
+          <h4>AI &amp; integrations</h4>
+          <ul class="chips"><li>LLM APIs</li><li>Image generation</li><li>Online payments</li><li>Instant messaging</li><li>Push notifications</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact reveal">
+        <h2>Looking for a software engineer? Let&rsquo;s talk.</h2>
+        <p>I&rsquo;m open to roles in any location, whether on-site, hybrid or remote. The quickest way to reach me is a message on LinkedIn.</p>
+        <a class="btn" href="https://www.linkedin.com/in/binghua-zhang-a486a22b7/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg> Message me on LinkedIn</a>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap mono">
+  <div class="wrap">
     <span>&copy; 2026 Binghua Zhang</span>
-    <span>Perth, Western Australia</span>
+    <span>Software engineer &middot; open to work</span>
   </div>
 </footer>
 
@@ -554,7 +619,7 @@
       entries.forEach(function (entry) {
         if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
     items.forEach(function (el) { io.observe(el); });
   })();
 </script>
