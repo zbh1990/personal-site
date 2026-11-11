@@ -13,7 +13,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23f6d94c'/%3E%3Crect x='4' y='4' width='56' height='56' rx='6' fill='none' stroke='%232d2c28' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Consolas,monospace' font-size='26' text-anchor='middle' fill='%232d2c28'%3EBZ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" media="print" onload="this.media='all'">
 <script>document.documentElement.classList.add('js');</script>
 <style>
   :root {
@@ -21,7 +21,8 @@
     --paper: #fbf8ee;
     --card: #fffdf5;
     --ink: #2d2c28;
-    --muted: #6d6b63;
+    --muted: #54524b;
+    --soft-ink: #3b3a35;
     --orange: #e8743b;
     --blue: #3557b0;
     --green: #2f7d4f;
@@ -30,8 +31,9 @@
     --red: #c8402f;
     --yellow: #f6d94c;
     --note: #f7df70;
+    --sans: "DM Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     --mono: "DM Mono", ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, "Courier New", monospace;
-    --tex: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='340'%3E%3Cfilter id='p' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.42' numOctaves='4' seed='7' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' lighting-color='%23fff' surfaceScale='1.25'%3E%3CfeDistantLight azimuth='45' elevation='70'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+    --tex: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='340'%3E%3Cfilter id='p' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.42' numOctaves='4' seed='7' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' lighting-color='%23fff' surfaceScale='.5'%3E%3CfeDistantLight azimuth='45' elevation='80'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
     color-scheme: light;
   }
 
@@ -45,8 +47,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 1.75;
-    letter-spacing: .015em;
-    word-spacing: .08em;
+    letter-spacing: 0;
     -webkit-font-smoothing: antialiased;
   }
   a { color: inherit; }
@@ -73,9 +74,9 @@
     position: relative;
     padding: 28px 30px 30px;
     background-color: var(--card);
-    background-image: var(--tex);
-    background-position: 120px 60px;
-    background-blend-mode: multiply;
+    background-image: linear-gradient(rgba(255, 253, 245, .62), rgba(255, 253, 245, .62)), var(--tex);
+    background-position: 0 0, 120px 60px;
+    background-blend-mode: normal, multiply;
     box-shadow: 0 1px 1px rgba(80, 70, 45, .10), 2px 4px 10px rgba(80, 70, 45, .11);
   }
   .tape {
@@ -100,12 +101,18 @@
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 10' preserveAspectRatio='none'%3E%3Cpath d='M1 5.500 C 70 3.500, 150 7, 230 4.800 S 380 3.200, 460 5.800 S 560 4, 599 5.200' fill='none' stroke='%232d2c28' stroke-width='1.3' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") center / 100% 10px no-repeat; opacity: .6;
   }
 
+  /* body copy uses a proportional face so long text is easy to read */
+  .lede, .prose p, .cap > p:not(.num), .points li:not(.when), .honours li p:not(.yr):not(.sems), .contact p, .school p:not(.yr) {
+    font-family: var(--sans); letter-spacing: 0; font-size: 1.06rem; line-height: 1.7;
+  }
+  .prose p { color: var(--soft-ink); }
+
   /* ---------- masthead ---------- */
   .mast { position: relative; padding-right: 270px; min-height: 230px; }
   .over { color: var(--muted); font-size: .84rem; letter-spacing: .08em; }
   h1 { font-size: clamp(2.5rem, 6.4vw, 4.3rem); line-height: 1.1; letter-spacing: .01em; margin-top: 12px; display: inline-block; position: relative; padding-bottom: 14px; }
   h1 svg { position: absolute; left: -2px; right: -6px; bottom: 0; width: calc(100% + 8px); height: 12px; overflow: visible; }
-  .lede { color: var(--muted); font-size: 1.02rem; max-width: 43em; margin-top: 16px; }
+  .lede { color: var(--soft-ink); max-width: 40em; margin-top: 16px; }
   .lede b { color: var(--ink); font-weight: 400; background: linear-gradient(transparent 58%, rgba(246, 217, 76, .75) 58%); }
 
   .controls { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; align-items: center; }
@@ -168,7 +175,7 @@
   .cap { --c: var(--orange); display: flex; flex-direction: column; padding: 24px 26px 26px; }
   .cap .num { color: var(--c); font-size: 1.9rem; line-height: 1; }
   .cap h3 { font-size: 1.22rem; line-height: 1.35; margin-top: 12px; }
-  .cap p { color: var(--muted); font-size: .92rem; margin-top: 8px; }
+  .cap p { color: var(--muted); margin-top: 8px; }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: auto; padding-top: 18px; font-size: .86rem; }
   .legend li { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
   .legend li::before { content: ""; width: 11px; height: 11px; background: var(--c); border: 1.3px solid var(--ink); border-radius: 2px; flex: none; }
@@ -185,7 +192,7 @@
   .job-top h3 span { display: block; color: var(--muted); font-size: .86rem; }
   .job-top p { text-align: right; font-size: .92rem; }
   .points { margin-top: 10px; }
-  .points li { position: relative; padding-left: 20px; color: var(--muted); font-size: .92rem; }
+  .points li { position: relative; padding-left: 20px; color: var(--muted); }
   .points li + li { margin-top: 4px; }
   .points li::before { content: "–"; position: absolute; left: 2px; color: var(--ink); }
   .points .when { color: var(--ink); padding-left: 0; margin-top: 10px; }
@@ -210,14 +217,15 @@
   .honours li { padding: 13px 0 14px; }
   .honours .yr { color: var(--orange); font-size: .9rem; }
   .honours h3 { font-size: 1.02rem; line-height: 1.45; }
-  .honours p { color: var(--muted); font-size: .87rem; line-height: 1.6; margin-top: 2px; }
+  .honours p { color: var(--muted); margin-top: 2px; }
+  .honours .yr, .honours .sems { font-size: .9rem; }
   .sems { color: var(--green) !important; }
 
   .edu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 30px; }
   .school { padding: 20px 24px 22px; }
   .school .yr { color: var(--muted); font-size: .86rem; }
   .school h3 { font-size: 1.14rem; line-height: 1.4; margin-top: 2px; }
-  .school p { color: var(--muted); font-size: .92rem; }
+  .school p { color: var(--muted); }
 
   /* contact */
   .contact { margin-top: 44px; padding: clamp(30px, 6vw, 56px) clamp(22px, 5vw, 56px); text-align: center; }
