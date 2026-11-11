@@ -58,6 +58,15 @@
   ::selection { background: var(--yellow); color: var(--ink); }
   .skip { position: absolute; left: -999px; top: 8px; background: var(--yellow); padding: 8px 14px; z-index: 40; }
   .skip:focus { left: 8px; }
+  .switch {
+    position: fixed; right: 18px; bottom: 18px; z-index: 50;
+    display: inline-flex; align-items: center; gap: 9px; padding: 9px 15px 9px 12px;
+    text-decoration: none; font-family: var(--mono); font-size: .86rem; color: var(--ink);
+    background: var(--yellow); border: 1.6px solid var(--ink); border-radius: 7px 4px 8px 3px / 4px 8px 3px 7px;
+    transform: rotate(-1.5deg); box-shadow: 2px 5px 12px rgba(50, 60, 50, .28); transition: transform .18s, background .18s;
+  }
+  .switch:hover { transform: rotate(0deg) translateY(-2px); background: #ffe66a; }
+  .switch i { width: 15px; height: 15px; border-radius: 50%; background: linear-gradient(90deg, #07090d 50%, #c8f542 50%); border: 1.3px solid var(--ink); }
 
   /* ---------- paper ---------- */
   .sheet {
@@ -273,6 +282,7 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<a class="switch" href="dark.html" aria-label="Switch to the dark version of this page"><i aria-hidden="true"></i>Dark version</a>
 
 <div class="sheet">
   <header class="mast">
